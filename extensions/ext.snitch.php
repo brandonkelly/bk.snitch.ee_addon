@@ -5,7 +5,7 @@
  *
  * This extension enables you to send email notifications on create, edit, and delete
  *
- * @package   Gypsy
+ * @package   Snitch
  * @author    Brandon Kelly <me@brandon-kelly.com>
  * @link      http://brandon-kelly.com/apps/snitch
  * @copyright Copyright (c) 2008-2009 Brandon Kelly
@@ -62,7 +62,7 @@ class Snitch
 	 *
 	 * @var string
 	 */
-	var $docs_url		= 'http://brandon-kelly.com/apps/snitch?utm_campaign=playa_em';
+	var $docs_url		= 'http://brandon-kelly.com/apps/snitch?utm_campaign=snitch_em';
 	
 	
 	
@@ -72,11 +72,10 @@ class Snitch
 	 * @param array   $settings
 	 * @since version 1.0.0
 	 */
-	function Snitch($settings='')
+	function Snitch($settings=array())
 	{
 		$this->settings = $this->get_site_settings($settings);
 	}
-	// END
 	
 	
 	
@@ -143,13 +142,16 @@ class Snitch
 	function get_site_settings($settings=array())
 	{
 		global $PREFS;
-
+		
+		$site_settings = $this->get_default_settings();
+		
 		$site_id = $PREFS->ini('site_id');
-		$site_settings = isset($settings[$site_id])
-			? $settings[$site_id]
-			: $this->get_default_settings();
+		if (isset($settings[$site_id]))
+		{
+			$site_settings = array_merge($site_settings, $settings[$site_id]);
+		}
 
-		return array_merge($this->get_default_settings(), $site_settings);
+		return $site_settings;
 	}
 	
 	
