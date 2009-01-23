@@ -50,43 +50,33 @@ recipients for each weblog.
 ####  Customizing your email template  ###############################
 The following variable tags are available to the email’s Subject and
 
-* 
 ##### `{action}`
   The action that just took place (“created”, “updated”, or “deleted”)
 
-* 
 ##### `{email}`
   The active user’s email address
 
-* 
 ##### `{entry_id}`
   The entry’s ID
 
-* 
 ##### `{entry_status}`
   The entry’s status
 
-* 
 ##### `{entry_title}`
   The entry’s title
 
-* 
 ##### `{name}`
   The active user’s username
 
-* 
 ##### `{url}`
   A combination of the `{weblog_url}` and the `{url_title}`
 
-* 
 ##### `{url_title}`
   The entry’s URL Title
 
-* 
 ##### `{weblog_name}`
   The name of the entry’s weblog
 
-* 
 ##### `{weblog_url}`
   The URL of the entry’s weblog
 
