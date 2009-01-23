@@ -49,6 +49,7 @@ recipients for each weblog.
 
 ####  Customizing your email template  ###############################
 The following variable tags are available to the email’s Subject and
+Message templates:
 
 ##### `{action}`
   The action that just took place (“created”, “updated”, or “deleted”)
