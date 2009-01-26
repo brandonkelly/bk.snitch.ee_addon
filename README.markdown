@@ -22,11 +22,11 @@ Installation
 Configuration
 ----------------------------------------------------------------------
 
-From Snitch’s Settings page, you can set the following preferences:
+From Snitch's Settings page, you can set the following preferences:
 
 ####  Notification Settings  #########################################
 Define when Snitch should send out email notifications (on create,
-update, and/or delete). You can also choose to have the active user’s
+update, and/or delete). You can also choose to have the active user's
 notification skipped over.
 
 ####  Email Template  ################################################
@@ -35,7 +35,7 @@ ExpressionEngine templates.
 
 ####  Check for Snitch updates?  #####################################
 Powered by [LG Addon Updater](http://leevigraham.com/cms-customisation/expressionengine/lg-addon-updater/),
-Snitch can call home and check to see if there’s a new
+Snitch can call home and check to see if there's a new
 update available.
 
 
@@ -43,48 +43,48 @@ Usage
 ----------------------------------------------------------------------
 
 ####  Enable notifications and define recipients  ####################
-Snitch sits on top of ExpressionEngine’s built-in notification
-settings. Make sure that you’ve enabled notifications and defined the
+Snitch sits on top of ExpressionEngine's built-in notification
+settings. Make sure that you've enabled notifications and defined the
 recipients for each weblog.
 
 ####  Customizing your email template  ###############################
-The following variable tags are available to the email’s Subject and
+The following variable tags are available to the email's Subject and
 Message templates:
 
 ##### `{action}`
   The action that just took place (“created”, “updated”, or “deleted”)
 
 ##### `{email}`
-  The active user’s email address
+  The active user's email address
 
 ##### `{entry_id}`
-  The entry’s ID
+  The entry's ID
 
 ##### `{entry_status}`
-  The entry’s status
+  The entry's status
 
 ##### `{entry_title}`
-  The entry’s title
+  The entry's title
 
 ##### `{name}`
-  The active user’s username
+  The active user's username
 
 ##### `{url}`
   A combination of the `{weblog_url}` and the `{url_title}`
 
 ##### `{url_title}`
-  The entry’s URL Title
+  The entry's URL Title
 
 ##### `{weblog_name}`
-  The name of the entry’s weblog
+  The name of the entry's weblog
 
 ##### `{weblog_url}`
-  The URL of the entry’s weblog
+  The URL of the entry's weblog
 
 
 Requirements
 ----------------------------------------------------------------------
-Snitch requires ExpressionEngine 1.6+
+Snitch requires ExpressionEngine 1.6 or later
 
 
 Change Log
@@ -102,5 +102,5 @@ Onward
 ----------------------------------------------------------------------
 
 - [Snitch documentation](http://brandon-kelly.com/apps/snitch)
-- [Snitch’s thread on EE Forums](http://expressionengine.com/forums/viewthread/76075/)
+- [Snitch's thread on EE Forums](http://expressionengine.com/forums/viewthread/76075/)
 - [Snitch support on Get Satisfaction](http://getsatisfaction.com/brandonkelly/products/brandonkelly_snitch)
